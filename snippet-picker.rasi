@@ -1,0 +1,83 @@
+/**
+ * Snippet picker — category header on top, 3x3 cream grid.
+ * Cursor locked on center (current item); surrounding items move.
+ */
+* {
+    cream:            #e8dcc8;
+    cream-selected:   #f2e9d8;
+    ink:              #111111;
+    void:             #000000;
+    background-color: transparent;
+    text-color:       @ink;
+    spacing:          0;
+}
+
+configuration {
+    show-icons: false;
+}
+
+window {
+    background-color: @void;
+    border:           0;
+    padding:          40px;
+    width:            40em;
+}
+
+mainbox {
+    children:         [ message, listview ];
+    spacing:          28px;
+    padding:          8px;
+    background-color: @void;
+}
+
+message {
+    background-color: @void;
+    padding:          0;
+    border:           0;
+}
+
+textbox {
+    background-color: @cream;
+    text-color:       @ink;
+    padding:          10px 18px;
+    horizontal-align: 0.5;
+}
+
+listview {
+    columns:          3;
+    lines:            3;
+    fixed-columns:    true;
+    fixed-height:     true;
+    cycle:            true;
+    flow:             horizontal;
+    scrollbar:        false;
+    spacing:          18px;
+    background-color: @void;
+}
+
+element {
+    padding:          16px 14px;
+    background-color: @cream;
+    text-color:       @ink;
+    cursor:           pointer;
+    children:         [ element-text ];
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+}
+
+element selected {
+    background-color: @cream-selected;
+    text-color:       @ink;
+    border:           2px;
+    border-color:     @cream;
+}
+
+element normal {
+    background-color: @cream;
+    text-color:       @ink;
+}
