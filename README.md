@@ -26,7 +26,22 @@ Larger grids (5×5, 7×7, …) show more neighbor categories/variants. Uneven si
 
 ### Install
 
-Arch:
+Arch (package):
+
+```bash
+git archive --format=tar.gz --prefix=snippet-picker-0.1.0/ \
+  -o snippet-picker-0.1.0.tar.gz v0.1.0
+makepkg -si
+```
+
+`makepkg -si` pulls in `rofi` and `gawk`. Also install a clipboard helper and optionally the popup:
+
+```bash
+sudo pacman -S wl-clipboard xclip   # Wayland and/or X11
+sudo pacman -S kdialog              # optional
+```
+
+Arch (deps only, run from the repo):
 
 ```bash
 sudo pacman -S rofi wl-clipboard xclip
