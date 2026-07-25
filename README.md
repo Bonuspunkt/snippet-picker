@@ -53,11 +53,11 @@ sudo dnf install kdialog
 ## Usage
 
 ```bash
-./kde-snippet-picker-rofi.sh              # 3×3 (default)
-GRID=5 ./kde-snippet-picker-rofi.sh       # 5×5
-GRID=7x3 ./kde-snippet-picker-rofi.sh     # 7 cols × 3 rows
-GRID_COLS=9 GRID_ROWS=5 ./kde-snippet-picker-rofi.sh
-./kde-snippet-picker-rofi.sh --edit       # edit snippet file
+./snippet-picker              # 3×3 (default)
+GRID=5 ./snippet-picker       # 5×5
+GRID=7x3 ./snippet-picker     # 7 cols × 3 rows
+GRID_COLS=9 GRID_ROWS=5 ./snippet-picker
+./snippet-picker --edit       # edit snippet file
 ```
 
 | Key | Action |
