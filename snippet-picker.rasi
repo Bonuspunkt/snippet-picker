@@ -1,10 +1,12 @@
 /**
- * Snippet picker — category header on top, 3x3 cream grid.
+ * Snippet picker — category header on top, cream grid (size set via -theme-str).
  * Cursor locked on center (current item); surrounding items move.
  */
 * {
     cream:            #e8dcc8;
     cream-selected:   #f2e9d8;
+    sage:             #b7c9b0;
+    sage-selected:    #c5d5bf;
     ink:              #111111;
     void:             #000000;
     background-color: transparent;
@@ -30,36 +32,48 @@ mainbox {
     background-color: @void;
 }
 
+/* Hide unused search bar */
+inputbar {
+    enabled:          false;
+}
+
+/* Category header — message textbox centers reliably */
 message {
-    background-color: @void;
-    padding:          0;
-    border:           0;
+    background-color: @sage;
+    text-color:       @ink;
+    padding:          14px 20px;
+    expand:           false;
+    width:            100%;
 }
 
 textbox {
-    background-color: @cream;
+    background-color: @sage;
     text-color:       @ink;
-    padding:          10px 18px;
     horizontal-align: 0.5;
+    vertical-align:   0.5;
+    expand:           true;
+    width:            100%;
+    padding:          0;
 }
 
 listview {
     columns:          3;
     lines:            3;
     fixed-columns:    true;
-    fixed-height:     true;
+    fixed-height:     false;
     cycle:            true;
     flow:             horizontal;
     scrollbar:        false;
-    spacing:          18px;
+    spacing:          16px;
     background-color: @void;
 }
 
 element {
-    padding:          16px 14px;
+    padding:          24px 16px;
     background-color: @cream;
     text-color:       @ink;
     cursor:           pointer;
+    orientation:      vertical;
     children:         [ element-text ];
 }
 
@@ -68,6 +82,8 @@ element-text {
     text-color:       inherit;
     horizontal-align: 0.5;
     vertical-align:   0.5;
+    highlight:        none;
+    padding:          8px 6px;
 }
 
 element selected {
@@ -80,4 +96,27 @@ element selected {
 element normal {
     background-color: @cream;
     text-color:       @ink;
+}
+
+/* Category tabs (script marks them urgent) */
+element urgent {
+    background-color: @sage;
+    text-color:       @ink;
+}
+
+element normal.urgent {
+    background-color: @sage;
+    text-color:       @ink;
+}
+
+element alternate.urgent {
+    background-color: @sage;
+    text-color:       @ink;
+}
+
+element selected.urgent {
+    background-color: @sage-selected;
+    text-color:       @ink;
+    border:           2px;
+    border-color:     @sage;
 }

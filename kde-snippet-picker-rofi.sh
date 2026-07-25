@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# 3x3 snippet carousel: arrows wrap forever (Left/Right = category, Up/Down = variant)
+# NxM snippet carousel: arrows wrap forever (Left/Right = category, Up/Down = variant)
+# Grid: GRID=5 | GRID=5x5 | GRID=7x3  (odd sizes; even values round up). Default 3x3.
 # Requires: rofi, plus xclip/wl-clipboard for copying
 set -euo pipefail
 
@@ -17,11 +18,636 @@ if [ ! -f "$SNIPPET_FILE" ]; then
 Shruggie::Classic::¯\_(ツ)_/¯
 Shruggie::Excited::ヽ(°〇°)ﾉ
 Shruggie::Confused::¯\_(⊙_ʖ⊙)_/¯
+Shruggie::Disapproving::¯\_(ಠ_ಠ)_/¯
+Shruggie::Cheerful::¯\_(◉‿◉)_/¯
+Shruggie::Teary::¯\_(ಥ‿ಥ)_/¯
+Shruggie::Relaxed::╮(˘⌣˘)╭
+Shruggie::Indifferent::╮(︶︿︶)╭
+Shruggie::Cute::┐(ˊᗜˋ*)┌
+Shruggie::Puzzled::╮(⊙_ʖ⊙)╭
+Shruggie::Content::╮(ˆ⌣ˆ)╭
+Shruggie::Cool::╮(⌐■_■)╭
+Shruggie::OhWell::╮(°᎑°)╭
+Shruggie::IDunno::╮(╯_╰)╭
+Shruggie::Quick::(ツ)ノ
+Shruggie::Soft::╮( ˘ 、˘ )╭
+Shruggie::Flat::╮(─.─)╭
+Shruggie::Flex::ᕕ( ˘᎑˘ )ᕗ
+Shruggie::Nervous::╮(ˆ꒳ˆ;)╭
+Shruggie::Tired::┐(´─`)┌
+Shruggie::Wavy::╮(′～‵)╭
+Shruggie::Stoic::┐(￣─￣)┌
+Shruggie::Happy::╮(◔▽◔)╭
+Shruggie::Cat::╮(ꋧ ᆺ ꋧ)╭
+Shruggie::Sad::┐(´﹏`)┌
+Shruggie::Arms::ʅ(◞‿◟)ʃ
+Shruggie::Concerned::╮(ᐞ ‸ ᐞ)╭
+Shruggie::Bear::┐(￣ᴥ￣)┌
+Shruggie::SoftSmile::╮(ᵔ_⌒)╭
+Shruggie::Deadpan::┐(´_`)┌
+Shruggie::CatFace::¯\_(ↀωↀ)_/¯
+Shruggie::DealWithIt::¯\_(⌐_⌐)_/¯
+Shruggie::Star::╮(★ε★)╭
+Shruggie::Unimpressed::┐(￣_￣)┌
+Shruggie::Awkward::┐(´д`;)┌
+Shruggie::SoftClassic::¯\_(°◡°)_/¯
+Shruggie::Joy::┐(∀◡∀)┌
+Shruggie::WideEyes::¯\_(ʘ‿ʘ)_/¯
+Shruggie::FlatSmile::┐(´ー`)┌
+Shruggie::SideEye::┐(¬_¬)┌
+Shruggie::Tiny::╮(˙.◡)╭
+Shruggie::Blush::╮(ꈍ﹏ꈍ)╭
+Shruggie::Smirk::┐(σ◡σ)┌
+Shruggie::Cry::┐(˘̩╭╮˘̩)┌
+Shruggie::Calm::┐(˘◡˘)┌
+Shruggie::SoftFace::¯\_(ᴗ_ᴗ)_/¯
+Shruggie::Fancy::¯\_(ↂᴗↂ)_/¯
+Shruggie::Spark::╮(˃ω˂)╭
+Shruggie::BigEyes::¯\_(ꇴωꇴ)_/¯
+Shruggie::DotEyes::┐(●‿●)┌
+Shruggie::Dog::┐(^ᴥ˂)┌
+Shruggie::Whimper::¯\_(ˊ﹏ˊ)_/¯
+Shruggie::Gentle::¯\_(˘◡˘)_/¯
+Shruggie::Grin::╮(ˊ▽ˋ)╭
+Shruggie::HappyEyes::┐(≦ᴗ≦)┌
+Shruggie::BigGrin::┐(ᗣ∀ᗣ)┌
+Shruggie::Triangle::╮(△▽△)╭
+Shruggie::Pucker::┐(ˇεˇ)┌
+Shruggie::SoftKiss::╮(ᴗεᴗ)╭
 Tableflip::Classic::(╯°□°)╯︵ ┻━┻
 Tableflip::Return::┻━┻ ︵ ¯\(ツ)/¯ ︵ ┻━┻
 Tableflip::Angry::(ノಠ益ಠ)ノ彡┻━┻
-Signature::Formal::Best regards,\nYour Name
-Signature::Casual::Cheers,\nYour Name
+Tableflip::DoubleRage::┻━┻ ︵╰(‵□′)╯︵ ┻━┻
+Tableflip::Furious::(╯°Д°）╯ ┻━┻
+Tableflip::AngryToss::(ノ｀Д´)ノ︵ ┻━┻
+Tableflip::Frustrated::(ノ‵□′)ノ ︵ ┻━┻
+Tableflip::Bear::ʕノ•ᴥ•ʔノ ︵ ┻━┻
+Tableflip::Cat::(ﾉ*ФωФ)ﾉ ︵ ┻━┻
+Tableflip::Done::(ノ=Д=)ノ┻━┻
+Tableflip::Grumpy::(╯ᓀ‸ᓂ)╯ ︵ ┻━┻
+Tableflip::Whatever::(ノ˃ ⌑ ˂)ノ ︵ ┻━┻
+Tableflip::PutBack::┬─┬ノ( º _ ºノ)
+Tableflip::Restore::┬─┬ ノ( ゜-゜ノ)
+Tableflip::DoubleFlip::┻━┻ ︵╰(°□°)╯︵ ┻━┻
+Tableflip::RageQuit::(ﾉﾟд≦)ﾉ︵┻━┻
+Tableflip::Yeet::(ノ｀0)ノ ~┻┻
+Tableflip::Gleeful::(ﾉ≧∇≦)ﾉ ﾐ ┸┸
+Tableflip::Smug::ミ(ノ ̄^￣)ノ ≡┻━┻
+Tableflip::HappyRestore::┬─┬ ノ( ^_^ノ)
+Tableflip::SetBack::┬─┬ノ(°-°ノ)
+Tableflip::BoxFlip::(ﾉ`□´)ﾉ ︵ ┻━┻
+Tableflip::SnapFlip::(ノ`□´)ノ⌒┻━┻
+Tableflip::ClassicBang::(╯°□°)╯︵ ┻━┻ !!
+Tableflip::LennyFix::┬┬＝( ͡° ͜ʖ ͡°)ﾉ
+Tableflip::SwordFlip::(ノ≧∇≦)ノ ⌒ ┫
+Tableflip::TearFlip::(ノToT)ノ ┫:･'.::･┻┻:･'.::･
+Tableflip::ShrugFlip::┻━┻ ¯\_(ツ)_/¯ ┻━┻
+Tableflip::YellFlip::(ﾉ`Д´)ﾉ︵ ┻━┻
+Tableflip::ArcFlip::(ノ`⌒´)ノ ︵ ┻━┻
+Tableflip::Backtick::(╯‵□′)╯︵ ┻━┻
+Tableflip::LennyFlip::(ノ͡° ͜ʖ ͡°)ノ︵┻━┻
+Tableflip::MFace::(ノ｀m´)ノ ~┻━┻
+Tableflip::SadToss::(ﾉ´д`)ﾉ ⌒ ┻━┻
+Tableflip::CuteFlip::(ﾉᵔ▽ᐛ)ﾉ︵┻━┻
+Tableflip::Intense::(ノ╬д≦)ノ ︵ ┻━┻
+Tableflip::Squint::(╯≦□꒪)╯︵ ┻━┻
+Tableflip::Fury::(ノ˂̶Д˃̶)ノ ︵ ┻━┻
+Tableflip::TriangleEyes::(ノ▼Д▼)ノ ︵ ┻━┻
+Tableflip::ArmsUp::┻━┻ ︵ \(°□°)/ ︵ ┻━┻
+Tableflip::WallFlip::(ﾉ`□´)ﾉ⌒┫┻┠
+Tableflip::GentleFlip::(/¯◡ ‿ ◡)/¯ ~ ┻━┻
+Tableflip::SparkleWall::(ﾉ`□´)ﾉ⌒ ┫:∵
+Tableflip::HalfTable::(ノ`ω´)ノ ︵ ┻┳━┳
+Tableflip::StarEye::(ﾉ˂ロ☆)ﾉ︵┻━┻
+Tableflip::Disapprove::(╯ಠ□≧)╯︵ ┻━┻
+Tableflip::StarFlip::(ノ⁰□★)ノ ︵ ┻━┻
+Tableflip::TinyRage::(╯ₓ□˂)╯︵ ┻━┻
+Tableflip::SmileFlip::(╯`▽ﾟ)╯ ┻━┻
+Tableflip::BigMouth::(ノ≧ロ≦)ノ ︵ ┻━┻
+Tableflip::MegaYell::（ﾒ｀ﾛ´）/~┻━┻
+Tableflip::DotEye::(ノ˙□ʘ)ノ ︵ ┻━┻
+Tableflip::CircleRage::(╯⊚дˋ)╯︵ ┻━┻
+Tableflip::DownEye::(╯ಠ□▼)╯︵ ┻━┻
+Tableflip::DFace::(╯°Д°)╯︵ ┻━┻
+Lenny::Classic::( ͡° ͜ʖ ͡°)
+Lenny::Winking::( ͡~ ͜ʖ ͡°)
+Lenny::Flex::ᕦ( ͡° ͜ʖ ͡°)ᕤ
+Lenny::Nested::( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)
+Lenny::DealWithIt::( ͡° ͜ʖ ͡°)ノ⌐■-■
+Lenny::RoundEyes::( ͡❛ ͜ʖ ͡❛)
+Lenny::BigEyes::( ͡◉ ͜ʖ ͡◉)
+Lenny::Squint::( ͡ᵔ ͜ʖ ͡ᵔ)
+Lenny::Skeptic::( ͡≖ ͜ʖ ͡◉)
+Lenny::Happy::( ͡ᴗ ͜ʖ ͡ᴗ)
+Lenny::Pointing::(☞ ͡◉ ͜ʖ ͡⌐)☞
+Lenny::FlipOff::╭∩╮( ͡° ͜ʖ ͡°)╭∩╮
+Lenny::WavyMouth::( ͡◉ ͜ʖ̫ ͡◉)
+Lenny::Shrug::¯\_( ͡❛ ͜ʖ ͡❛)_/¯
+Lenny::Angry::( ͠ಠ ͟ʖ ͠ಠ)
+Lenny::Wave::( ͡° ͜ʖ ͡°)ノ
+Lenny::EqualEyes::( ͡≖ ͜ʖ ͡≖)
+Lenny::Raised::乁( ͡° ͜ʖ ͡° )ㄏ
+Lenny::PointWink::(☞ ͡ᵔ ͜ʖ ͡°)☞
+Lenny::TsMouth::( ͡° ͜つ ͡°)
+Lenny::DotEyes::( ͡• ͜ʖ ͡• )
+Lenny::Sparkle::( ͡° ͜ʖ ͡˘)✧
+Lenny::Bug::( ͡° ͜ʖ ͡°)╯╲___🐛
+Lenny::CoolDance::╰( ͡⌐ ͜‿ ͡~)╯
+Lenny::TableFlip::(ノ͡° ͜ʖ ͡°)ノ︵┻━┻
+Lenny::RaiseArms::ヽ( ͠° ͟ʖ ͡°)ﾉ
+Lenny::Double::(˵ ͡° ͜ʖ ͡°˵)(˵ ͡° ͜ʖ ͡°˵)
+Lenny::Bear::ʕ ͡° ͜ʖ ͡°ʔ
+Lenny::HappyWave::( ͡ᵔ ͜ʖ ͡ᵔ )ﾉ
+Lenny::Partial::( ͡° ͜ʖ( ͡° ͜ʖ ͡°)
+Lenny::OEyes::( ͡o ͜ʖ ͡o)
+Lenny::MixedWink::( ͡ᵔ ͜‿ ͡◔)ﾉ
+Lenny::Arabic::( ͡° ل͜ ͡°)
+Lenny::CircleEyes::( ͡⊙ ͜ʖ ͡⊙)
+Lenny::DealAlt::( ͡° ͜ʖ ͡°)ﾉ⌐■-■
+Lenny::Holding::╰( ͡° ͜ʖ ͡° )つ
+Lenny::Asym::( ͡⌐ ͜ʖ ͡❛)
+Lenny::FixTable::┬┬＝( ͡° ͜ʖ ͡°)ﾉ
+Lenny::Spaced::( ͠° ͜ʖ ͠° )
+Disapproval::Classic::(ಠ_ಠ)
+Disapproval::SideEye::(¬_¬)
+Disapproval::Frowning::(ಠ╭╮ಠ)
+Disapproval::Unamused::(¬_¬")
+Disapproval::Deep::(¬▂¬)
+Disapproval::Pointing::( ¬_¬)σ
+Disapproval::Awkward::(¬_¬|||)
+Disapproval::OhReally::(¬o¬)
+Disapproval::Suspicious::(ㆆ_ㆆ)
+Disapproval::Furious::(ꐦ_ꐦ)
+Disapproval::Shades::(;⌐■_■)
+Disapproval::Annoyed::(¬_¬*)
+Disapproval::Smiling::(ಠ⌣ಠ)
+Disapproval::Done::(¬_¬)ノ
+Disapproval::NotHavingIt::(¬△¬)
+Disapproval::HeavySigh::(¬_¬)=3
+Disapproval::ForcedSmile::(；⌣̀_⌣́)
+Disapproval::Grumbling::(￣ε￣＃)
+Disapproval::TossAway::( -_-)ノ⌒●~*
+Disapproval::Shrug::¯\_(ಠ_ಠ)_/¯
+Disapproval::Cry::(ಠ﹏ಠ)
+Disapproval::Delta::(`Δ´)
+Disapproval::Quiver::( ಠ ʖ̯ ಠ)
+Disapproval::Cap::(ಠ ∩ ಠ)
+Disapproval::Crossed::(￣_￣ ⨂)
+Disapproval::Smirk::(¬‿¬*)
+Disapproval::Wavy::(¬﹏¬)
+Disapproval::FuriousCry::(ꐦ﹏ꐦ)
+Disapproval::Glare::(◣д◣)
+Disapproval::KoreanNo::ㄴㄴ
+Disapproval::WaveOff::( ˘_˘ )ノ✧
+Disapproval::AngryBrows::(-ͱ_-ʹ)
+Disapproval::Weird::(ᴒᴣᴒ)Ս
+Disapproval::SadGlare::(◣﹏◣)
+Disapproval::Omega::(ಠωಠ)
+Disapproval::FuriousSmile::(ꐦ‿ꐦ)
+Disapproval::SideOmega::(¬ω¬)
+Disapproval::WinkSide::(¬‿¬)
+Disapproval::Tongue::ಠ_ʖಠ
+Disapproval::Unflip::ಠ_ಠ ┬─┬
+Disapproval::WaveFurious::(ꐦ╭╮ꐦ)ノ
+Disapproval::AngrySmile::(╬‿╬)
+Disapproval::FuriousFace::ꐦ╭╮ꐦ
+Disapproval::DownGlare::(◣_◣)
+Disapproval::FuriousOmega::ꐦωꐦ)
+Disapproval::AngryFlat::(╬_╬)
+Disapproval::OpenMouth::(ಠдಠ)
+Disapproval::WaveFrown::(ꐦ╭╮ꐦ)
+Facepalm::Classic::(-‸ლ)
+Facepalm::Exasperated::(ノ´Д｀)
+Facepalm::SoDone::(;´Д｀)
+Facepalm::Ugh::(>_<)ゞ
+Facepalm::NotAgain::(￣ヘ￣;)
+Facepalm::Seriously::(；¬_¬)
+Facepalm::OhNo::m(_ _)m
+Facepalm::GiveUp::╮(╯_╰)╭
+Facepalm::Distressed::(ノ;´Д｀)ノ
+Facepalm::Disbelief::(；￣Д￣)
+Facepalm::Awkward::( ̄▽ ̄;)
+Facepalm::HandsUp::(ノ´ω｀)ノ
+Facepalm::WhyMe::(ノ´Д｀)ノ
+Facepalm::AwkwardSmile::(；´∀｀)
+Facepalm::SideEye::(；一_一)
+Facepalm::Cringe::(＞﹏＜)
+Facepalm::NoWords::(；￣ω￣)
+Facepalm::Whatever::╮(￣～￣)╭
+Facepalm::TossAway::( -_-)ノ⌒●~*
+Facepalm::RageStart::(ノ｀Д´)ノ︵
+Facepalm::Dots::(´;д;｀)…
+Facepalm::Whimper::(´-﹏-`*)
+Facepalm::Gleeful::(ノ≧∇≦)ノ
+Facepalm::Bow::ว(´Д｀ว)
+Facepalm::Lenny::(; ͡° ͜ʖ ͡°)
+Facepalm::CryBow::(´;ω;｀)ว
+Facepalm::Soft::(´⌒ω⌒｀)
+Facepalm::SoftBow::(;´ω｀)
+Facepalm::Yell::(ノ’Д’)ノ
+Facepalm::CryWave::(´;ω;｀)ノ
+Facepalm::BowAlt::(;´ω｀)ว
+Facepalm::TiredBow::(´-ω-｀)ว
+Facepalm::DoubleHands::(ノ´ω｀)ノノ
+Facepalm::DotsHands::(ノ´ω｀)ノ…
+Facepalm::LennyDots::(;͡°ω͡°)
+Facepalm::TiredDots::(´-ω-｀)…
+Facepalm::CryDots::(´;ω;｀)・・・
+Facepalm::CuteDots::(´・ω・｀)ノノ
+Facepalm::Exclaim::(ノ´Д｀)ノノ
+Facepalm::BowWave::(;´ω｀)ノノ
+Facepalm::TiredWave::(´-ω-｀)ノ
+Facepalm::SoftDistress::(ノ;´ω｀)ノ
+Facepalm::CatCry::(=´;ω;｀=)
+Facepalm::Cover::(ノ’Д’ノ)
+Facepalm::SoftAwkward::(´ω｀;)
+Facepalm::YellAlt::(;’Д’)
+Facepalm::Peek::_|¯|O
+Facepalm::SoftDots::(´⌒ω⌒｀)…
+Facepalm::YellDots::(ノ’Д’)ノ…
+Facepalm::CryEllipsis::(´;ω;｀)…
+Facepalm::WaveSmile::(;´∀｀)ノ
+Facepalm::CuteAwkward::(´・ω・｀;)…
+Facepalm::Drool::(´д｀ι)
+Facepalm::HandsYell::(ﾉ´д｀)ﾉ
+Facepalm::HugSoft::(ヾ(´・ω・｀)
+Facepalm::Triangle::(￣△￣;)
+Happy::Joyful::(*^▽^*)
+Happy::Overjoyed::(≧▽≦)
+Happy::Celebrating::ヽ(´▽`)ノ
+Happy::Cheerful::(◕‿◕)
+Happy::HappyDance::٩(◕‿◕｡)۶
+Happy::BigSmile::(＾▽＾)
+Happy::Content::(*´∀`*)
+Happy::Laughing::(^o^)
+Happy::FlowerJoy::(✿◠‿◠)
+Happy::Excited::ヾ(´〇`)ﾉ
+Happy::BrightEyes::(｡◕‿◕｡)
+Happy::WaveHello::( ´ ▽ ` )ﾉ
+Happy::Bunny::₍ᐢ.ˬ.ᐢ₎♡~
+Happy::Sparkle::꒰ঌ(˶ˆᗜˆ˵)໒꒱
+Happy::TinyJoy::( ⁰▿⁰)
+Happy::CuteGrin::(*ˊᗜˋ*)
+Happy::Soft::(*ˊ˘ˋ*)
+Happy::KissHeart::( ˘ ³˘)♥
+Happy::Round::(◍´꒳`◍)
+Happy::PointJoy::ദ്ദി*ˊᗜˋ*)
+Happy::Cheer::₍^ >ヮ<^₎ .ᐟ.ᐟ
+Happy::Omega::(*´ω`*)
+Happy::TinyBear::₍ᐢ.ˬ.ᐢ₎
+Happy::ArmsUp::＼(ˇ∇ˇ)／♥
+Happy::WinkSpark::(。•̀ᴗ-)✧
+Happy::Jump::(≧∇≦)/
+Happy::SoftSmile::(˶˃ ᵕ ˂˶)
+Happy::Salute::ヾ(・ω・)ゞ
+Happy::HappyEyes::(≧◡≦)
+Happy::FistPump::٩( ᐛ )و
+Happy::Puppy::૮ ˶ᵔ ᵕ ᵔ˶ ა
+Happy::Mouse::꒰ᐢ. .ᐢ꒱
+Happy::HeartJoy::(♡´▽`♡)
+Happy::LoveDots::(◍•ᴗ•◍)❤︎.*･ﾟ
+Happy::Dance::٩(ˊᗜˋ)و✧
+Happy::HeartFace::(◍•ᴗ•◍)❤
+Happy::FeedHeart::(˘▽˘>ԅ( ˘⌣˘)♡
+Happy::BlushHeart::(っ ´͈ ᵕ `͈ ς).｡o♡
+Happy::BigGrin::ꉂꉂ(ˊᗜˋ)
+Happy::SparkleWave::(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+Happy::Peace::٩(ˊᗜˋ*)و
+Happy::Yum::(っ˘ڡ˘ς)
+Happy::Flower::(*˙˘˙*)❀
+Happy::JumpO::ヾ(≧▽≦*)o
+Sad::Classic::(T_T)
+Sad::Crying::(;_;)
+Sad::Weeping::(╥﹏╥)
+Sad::Upset::(ᵕ̩̩ᴗᵕ̩̩)
+Sad::Pouting::(◞‸◟)
+Sad::Lonely::(っ˘̩╭╮˘̩)っ
+Sad::Dejected::(ρ_-)○
+Sad::Tearful::(μ_μ)
+Sad::Heartbroken::(╯︵╰,)
+Sad::Gloomy::(o´_`o)
+Sad::Troubled::(｡•́︿•̀｡)
+Sad::Melancholy::(っ- ‸ - ς)
+Sad::HeavyCry::(இ﹏இ`)
+Sad::Blank::(._. )
+Sad::Wailing::｡ﾟ(ﾟ´Д`ﾟ)ﾟ｡
+Sad::Sob::(˃̣̣̥⌓˂̣̣̥ )っ
+Sad::TearyEyes::(; ω ; )
+Sad::Watery::(╥_╥)
+Sad::Splash::｡ﾟ･（>﹏<）･ﾟ｡
+Sad::SoftCry::｡ﾟ(ﾟ´ω`ﾟ)ﾟ｡
+Sad::WellUp::(இ﹏இ)
+Sad::BigSob::(இдஇ)
+Sad::RoundCry::( ꒪⌓꒪)
+Sad::HugCry::o(╥﹏╥)o
+Sad::Teary::(ಥ_ಥ)
+Sad::ShrugSad::┐( ˘_˘)┌
+Sad::NervousSad::(◞ ‸ ◟；)
+Sad::Heavy::˚‧º·(˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ )‧º·˚
+Sad::SadFace::(｡>︿<｡ )
+Sad::Tremble::(ˊ̥̥̥̥̥ᗣˋ̥̥̥̥̥)
+Sad::WaveCry::(╥_╥)/
+Sad::Tears::(。T ω T。)
+Sad::BigTears::(;´༎ຶД༎ຶ`)
+Sad::Plead::(つ﹏<。)
+Sad::BearSad::ʕ ಡ ﹏ ಡ ʔ
+Sad::Wipe::(ノ_<、)
+Sad::Meh::(´・_・｀)
+Sad::Beg::(＞人＜;)
+Sad::UglyCry::( ᵒ̴̶̷̥́ωᵒ̴̶̷̣̥̀ )
+Sad::SobAlt::(つД`)
+Sad::CryMouth::(´;︵;`)
+Sad::Deadpan::(´_`)
+Sad::Mild::(｡•́-•̀｡)
+Sad::Thinking::( ˘•ω•˘ ).oO
+Sad::Nervous::(・・;)
+Sad::Flat::(≥_≤)
+Crying::Classic::(T_T)
+Crying::Watery::(╥_╥)
+Crying::Teary::(´;ω;`)
+Crying::Wipe::(ノ_<、)
+Crying::Welling::(இ﹏இ)
+Crying::Touched::( ;∀;)
+Crying::Sobbing::(つД`)
+Crying::CryingCat::(=ＴェＴ=)
+Crying::SadBear::ʕ ಡ ﹏ ಡ ʔ
+Crying::BigSob::(இдஇ)
+Crying::Wailing::(ﾟ´Д｀ﾟ)
+Crying::Bawling::。・ﾟ(ﾉД`)ﾟ・。
+Crying::SoftCry::ᴛ ω ᴛ
+Crying::Boohoo::o(TωT)o
+Crying::Mini::;ㅅ;
+Crying::Squint::˃̵﹏˂̵
+Crying::Korean::ㅠ ‧̫ ㅠ
+Crying::OneTear::( / ̫ т )
+Crying::Single::• ᴗ •̥
+Crying::UglyCry::(՞꜆Q A Q꜀՞)
+Crying::Weeping::(╥﹏╥)
+Crying::Troubled::(｡•́︿•̀｡)
+Crying::Heavy::｡ﾟ(ﾟ´Д`ﾟ)ﾟ｡
+Crying::Sob::(˃̣̣̥⌓˂̣̣̥ )っ
+Crying::Soft::( ; ω ; )
+Crying::HardCry::( ˃̣̣̥᷄⌓˂̣̣̥᷅ )
+Crying::Splash::｡ﾟ･（>﹏<）･ﾟ｡
+Crying::Closed::(。>﹏<。)
+Crying::SoftSplash::｡ﾟ(ﾟ´ω`ﾟ)ﾟ｡
+Crying::HugCry::o(╥﹏╥)o
+Crying::TearyEyes::(ಥ_ಥ)
+Crying::Lonely::(っ˘̩╭╮˘̩)っ
+Crying::Nervous::(◞ ‸ ◟；)
+Crying::Tremble::(ˊ̥̥̥̥̥ᗣˋ̥̥̥̥̥)
+Crying::Wave::(╥_╥)/
+Crying::Tears::(。T ω T。)
+Crying::BigTears::(;´༎ຶД༎ຶ`)
+Crying::Plead::(つ﹏<。)
+Crying::Beg::(＞人＜;)
+Crying::Ugly::( ᵒ̴̶̷̥́ωᵒ̴̶̷̣̥̀ )
+Crying::CryMouth::(´;︵;`)
+Crying::BearCry::ʕ╥ᴥ╥ʔ
+Crying::ToT::(ToT)
+Crying::ClosedEyes::(。>_<。)
+Love::Pure::(♡´▽`♡)
+Love::LovingEyes::(◕‿◕)♡
+Love::HeartFlower::♡(◕ᗜ◕✿)
+Love::Sweet::(ˆ◡ˆ)♥
+Love::BlowingKiss::(˘ ³˘)♥
+Love::LoveHug::(づ♡◕‿◕)づ
+Love::DoubleHeart::♥(ˆ⌣ˆ)♥
+Love::Adoring::(◍•ᴗ•◍)❤
+Love::Spreading::(/♡‿♡)/
+Love::Lovestruck::(♥ω♥*)
+Love::HappyLove::( ´ ▽ ` )♡
+Love::Grateful::(人´∀`)♡
+Love::Cheer::(๑˃ᴗ˂)ﻭ♡
+Love::ArmsHeart::＼(ˇ∇ˇ)／♥
+Love::SoftHeart::( ´͈ ᵕ `͈ )♡
+Love::Sparkle::(ෆˎˊᵕˋෆ)*✩
+Love::LoveDots::(◍•ᴗ•◍)❤︎.*･ﾟ
+Love::Feed::(˘▽˘>ԅ( ˘⌣˘)♡
+Love::BlushLove::(っ ´͈ ᵕ `͈ ς).｡o♡
+Love::SoftLove::(♡ˊ͈ ꒳ ˋ͈)♡
+Love::PuppyLove::૮ ˶ᵔ ᵕ ᵔ˶ ა♡
+Love::CatLove::♡ฅ(ᐤˊ꒳ฅˋᐤ♪)
+Love::GrinLove::ꉂ(ˊᗜˋ*)♡
+Love::Gentle::( ˶´ ᵕ `˶)♡
+Love::Kiss::(¯³¯)♡
+Love::OwlLove::♡(ӦｖӦ｡)
+Love::BigHug::(づ｡◕‿‿◕｡)づ
+Love::CuteLove::(*ˊᵕˋ*)੭ ♡
+Love::Pucker::♡(˃͈ε˂͈ )
+Love::PointHeart::( ´͈ ᵕ `͈ )◞♡
+Love::HeartEyes::(｡♥‿♥｡)
+Love::WaveLove::(｡•ω•｡)ﾉ♡
+Love::FlowerLove::♡(◡‿◡✿)
+Love::SoftEyes::♡´･ᴗ･`♡
+Love::WinkLove::(◕ᴗ~)♡
+Love::BlushHeart::(灬♥ω♥灬)
+Love::ContentLove::(*´∀`*)♡
+Love::BearLove::ʕ ꈍᴥꈍ ʔ
+Love::JumpLove::⸜(｡˃ ᵕ ˂ )⸝♡
+Love::SoftSpark::(ෆ˙ᵕ˙ෆ)♡
+Love::HeartCircle::｡ﾟ♡ﾟ｡(｡>‿‿<｡ )｡ﾟ♡ﾟ｡
+Love::Simple::(´∀｀)♡
+Love::RoundLove::♡(.◜ω◝.)♡
+Love::HeartEyes2::(*♡∀♡)
+Love::Closed::(♡˙︶˙♡)
+Love::SoftWink::(˶♡‿♡˶)
+Love::BlushNose::(♡´艸`)
+Love::OpenHeart::( ♥д♥)
+Love::KissMouth::(♥ε♥)
+Angry::Furious::(╬▔皿▔)
+Angry::TableRage::(ノಠ益ಠ)ノ
+Angry::Shout::(#`Д´)
+Angry::Glaring::(╬ Ò﹏Ó)
+Angry::Fighting::(ง •̀_•́)ง
+Angry::EvilGrin::ψ(`∇´)ψ
+Angry::SideEye::(눈_눈)
+Angry::Pouting::(｀ε´)
+Angry::Enraged::щ(ಠ益ಠщ)
+Angry::Suspicious::(≖_≖)
+Angry::Annoyed::(¬_¬)
+Angry::FedUp::(；一_一)
+Angry::Vein::(•̀ᗝ•́)💢
+Angry::Mad::<(｀^´)>
+Angry::DoubleVein::💢(｀∧´)💢
+Angry::SighVein::(-_-;)💢
+Angry::Yell::ヽ(#゚Д゚)ﾉ!
+Angry::SmirkMad::(╬ `▿´)
+Angry::Unamused::(￣ヘ￣)
+Angry::RageArms::ヽ(`Д´)ノ
+Angry::Shocked::Σ(；`д´)
+Angry::Side::(¬､¬)
+Angry::Sharp::(♯`∧´)
+Angry::Frown::(╬▔‸▔)
+Angry::MadStar::(`Д´*)
+Angry::PoutRound::（○｀ε´○）
+Angry::PointMad::(σ'Д')σ
+Angry::Nose::(・へ・)
+Angry::Mukii::(⁠＃`Д´)ﾑｷｰ!!
+Angry::YellAlt::(`Д´)
+Angry::CringeMad::(>﹏<)
+Angry::FuriousMouth::(ꐦ˘口˘)
+Angry::RageWave::(ノ`Д´)ノ
+Angry::DoubleGlare::（╬ Ò ‸ Ó）╬
+Angry::OmegaMad::(*｀Ω´*)
+Angry::Uneasy::(◑_◑;)
+Angry::Disapprove::(ಠ_ಠ)
+Angry::MildAnnoy::(;¬_¬)
+Angry::OFace::(o´_｀o;)
+Angry::Scream::｡･ﾟ*(>д<)*ﾟ･｡
+Hug::Classic::(づ｡◕‿‿◕｡)づ
+Hug::Cuddle::(っ´◡`)っ
+Hug::Reaching::(つ◕‿◕)つ
+Hug::Give::༼ つ ◕_◕ ༽つ
+Hug::Gentle::(っ´ω`)っ
+Hug::Side::⊂(´• ω •`⊂)
+Hug::Squeeze::(づ ＞ㅅ＜)づ
+Hug::Bear::ʕっ•ᴥ•ʔっ
+Hug::Comfort::(っ˘̩˘̩)っ
+Hug::BigBear::⊂(￣(エ)￣)⊃
+Hug::Excited::(つ◉ヮ◉)つ
+Hug::Loving::(っ´∀`)っ♡
+Hug::Soft::(づ˶• ᵕ •˶)づ♡
+Hug::Cozy::(っ˶ᵔ ᵕ ᵔ˶)っ
+Hug::FlowerBear::ʕっ•ᴥ•ʔっ✿
+Hug::Mouse::(っ ᐢ•ﻌ•ᐢ)っ
+Hug::GentleSqueeze::꒰っ˶• ω •˶っ꒱
+Hug::KissHug::(づ｡˘ ³˘｡)づ♡
+Hug::Wrap::⊂(˶• ᵕ •˶)⊃
+Hug::Sleepy::(っ´▿`)っ zzz
+Hug::Sparkle::(っ˃ ᵕ ˂)っ✧Hug✧
+Hug::SoftAlt::(づ˶•́ ᵕ •̀˶)づ
+Hug::SadHug::(づ◡﹏◡)づ
+Hug::Happy::(っ＞◡＜)っ
+Hug::BearLove::ʕ ⁎❛ᴥ❛⁎ ʔ💕
+Hug::Reach::(つ´∀｀)つ
+Hug::SoftWrap::⊂(˙ᵕ˙)⊃♡
+Hug::SqueezeJP::⊂(・ω・⊂)ぎゅ～
+Hug::LoveWrap::(⊃｡•́‿•̀｡)⊃♡
+Hug::KissArms::♡(っ˘ε˘ς)っ
+Hug::CuteWrap::⊂(•⩊•⊂)
+Hug::Flat::(つ▀¯▀)つ
+Hug::CryHug::(づ╥﹏╥)づ
+Hug::Omega::(っ˘ω˘)っ
+Hug::SoftMouth::(っ˶•⤙•˶)っ
+Hug::HeartOmega::(っ˶˘ω˘˶)っ ♡
+Hug::SmileHug::(っ˘▽˘)っ♡
+Hug::Kaomoji::(っ ᐛ )っ
+Hug::Feed::(っ˘з(˘⌣˘ )
+Hug::WaveHug::(づ。◕‿‿◕。)づ🌊
+Hug::SoftOmega::⊂(˶•ω•˶)⊃
+Hug::Yum::(っ˘ㅂ˘ς)
+Hug::CrySqueeze::(っ˃̣̣̥᷄ω˂̣̣̥᷅ )っ
+Hug::HeartPull::(っ´ω`)っ ⌒♡
+Hug::WrapAlt::(⊃｡•́‿•̀｡)⊃
+Hug::SadLove::(づ◡﹏◡)づ♡
+Hug::Round::(ɔ◔‿◔)ɔ
+Hug::DotSmile::(っ˙∇˙ς)
+Hug::HappyWrap::⊂(・▽・⊂)♡
+Hug::Hearts::(っ´∀`)っ ⌒ ♡♡♡
+Hug::CozyLove::(っ˶ᵔ ᵕ ᵔ˶)っ♡
+Hug::Simple::（っ^∇^っ）
+Hug::OmegaWrap::⊂(´・ω・`)つ
+Awkward::NervousScratch::(^-^;)ゞ
+Awkward::AwkwardLaugh::(´∀｀；)
+Awkward::ForcedSmile::(^∇^;)
+Awkward::Strained::( ̄∀ ̄;)
+Awkward::DoubleSweat::(;^_^;)
+Awkward::Uneasy::(;-_-;)
+Awkward::Oops::(^o^;)
+Awkward::Unsure::( ´・ω・` ;)
+Awkward::Shifty::(◑_◑;)
+Awkward::Wry::(¯▿¯;)
+Awkward::Helpless::╮(ˆ꒳ˆ;)╭
+Awkward::Flustered::(//・_・//)
+Awkward::Hesitant::(;・_・)
+Awkward::AwkwardRelief::( ´▽｀;)
+Awkward::StrainedLaugh::(;^∀^;)
+Awkward::Blank::(◯_◯;)
+Awkward::PanicSmile::(;°∀°;)
+Awkward::Backing::ヾ(^^;)
+Awkward::Sheepish::(⌒_⌒ ;)
+Awkward::WideEye::(º_º ;)
+Awkward::DotMouth::( ・ε・ ;)
+Awkward::OFace::(o´_｀o;)
+Awkward::BitterSmile::（苦笑）(^_^;)
+Awkward::Classic::(^_^;)
+Awkward::Dash::(ーдー;)
+Awkward::CatUneasy::(;=ω=;)
+Awkward::Panic::ヽ(゜ロ゜;)ノ
+Awkward::BigForced::(^▽^;)
+Awkward::Ahaha::(;'▽'A``
+Awkward::Side::(;¬_¬ ;)
+Awkward::WaveUneasy::(-_-;)ﾉ
+Awkward::Mild::(*-∀-)
+Awkward::SoftForced::(;^▽^;)
+Awkward::Nervous::( ´・_・｀;)
+Awkward::AhahaJP::(;°▽°;)ｱﾊﾊ
+Awkward::RoundNervous::(。ﾟωﾟ。;)
+Awkward::StarNervous::(*ﾟ∀ﾟ*;)
+Awkward::FlatSmile::(;◡_◡;)
+Awkward::Squint::(;><;)
+Awkward::BlushAwkward::(〃▽〃;)
+Awkward::Psi::(ψ_ψ;)
+Awkward::He::(ヘ_ヘ;)
+Awkward::GrinAwkward::(ヾ ̄▽ ̄;)
+Awkward::Closed::(⌒-⌒;)
+Awkward::SadAwkward::(；＞_＜;)
+Awkward::Shock::(ʘдʘ;)
+Awkward::Frown::(︶︿︶;)
+Awkward::BlushWave::(*ノωノ;)
+Awkward::Tiny::(っ ̯ ˂;)
+Awkward::SmirkAwkward::(￢ ‿ ￢;)
+Cute::Classic::(◕‿◕)
+Cute::FlowerEyes::(◕ᴗ◕✿)
+Cute::TinyBear::₍ᐢ.ˬ.ᐢ₎
+Cute::Bear::(ᵔᴥᵔ)
+Cute::HappyBlush::(*´▽`*)
+Cute::Blushing::(〃^▽^〃)
+Cute::FlowerSmile::(✿◠‿◠)
+Cute::BlowingKiss::( ˘ ³˘)♥
+Cute::Love::(◍•ᴗ•◍)❤
+Cute::Hug::(づ｡◕‿‿◕｡)づ
+Cute::ShySmile::(●´ω｀●)
+Cute::Mouse::꒰ᐢ. .ᐢ꒱
+Cute::SoftBunny::꒰ᐢ⸝⸝•༝•⸝⸝ᐢ꒱
+Cute::SparkleHeart::⋆˚꒰ঌ ໒꒱˚⋆
+Cute::WinkStar::(｡•ᴗ-)✩
+Cute::LittleWing::ʚ(ᵕ̈)ɞ
+Cute::Dreamy::⊹ ˚｡⋆
+Cute::SoftSmile::(˶ᵔ ᵕ ᵔ˶)
+Cute::Reaching::໒꒰ྀི｡• ᵕ •｡꒱ྀིっ
+Cute::TearyCute::˚‧º·(˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ )‧º·˚
+Cute::Cat::₍^. .^₎⟆
+Cute::BunnyHeart::₍ᐢ.ˬ.ᐢ₎♡~
+Cute::Sparkle::꒰ঌ(˶ˆᗜˆ˵)໒꒱
+Cute::CuteGrin::(*ˊᗜˋ*)
+Cute::Soft::(*ˊ˘ˋ*)
+Cute::Cheer::(๑˃ᴗ˂)ﻭ♡
+Cute::Round::(◍´꒳`◍)
+Cute::Omega::(*´ω`*)
+Cute::BlushSlash::(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)
+Cute::CatHappy::≽^◉⩊◉^≼
+Cute::WinkSpark::(。•̀ᴗ-)✧
+Cute::SoftHeart::( ´͈ ᵕ `͈ )♡
+Cute::CatAlt::≽^•⩊•^≼
+Cute::HeartNose::♡～(>᎑<๑)
+Cute::HappyEyes::(≧◡≦)
+Cute::Fist::٩( ᐛ )و
+Cute::CatFace::ฅ^•ﻌ•^ฅ
+Cute::Puppy::૮ ˶ᵔ ᵕ ᵔ˶ ა
+Cute::Winged::ʚ₍ᐢ. .ᐢ₎ɞ
+Cute::SparkLove::(ෆˎˊᵕˋෆ)*✩
+Cute::BlushSlash2::(⁄ ⁄•⁄ω⁄•⁄ ⁄)
+Cute::PureLove::(♡´▽`♡)
+Cute::LoveDots::(◍•ᴗ•◍)❤︎.*･ﾟ
+Cute::WaveCute::|ω・)ﾉ✧
+Cute::BearAngry::ʕ •̀ᴥ•́ ʔ
+Cute::Wink::(・ω<)☆
+Cute::BigGrin::( ˶ˆᗜˆ˵ )
+Cute::Plead::(＞人＜;)
+Cute::PuppyEyes::(๑•́ ₃ •̀๑)
+Cute::SoftPlead::( ๑ ᵕ ﹏ ᵕ ๑ )
 EOF
 fi
 
@@ -45,18 +671,57 @@ if ! awk -F'::' '!/^#/ && NF>=3 {found=1; exit} END{exit !found}' "$SNIPPET_FILE
   exit 1
 fi
 
-SNIPPET_FILE="$SNIPPET_FILE" rofi \
+# Parse GRID / GRID_COLS / GRID_ROWS (odd integers 1..15)
+parse_grid() {
+  local raw="${GRID:-}" cols rows
+  if [[ -n "${GRID_COLS:-}" || -n "${GRID_ROWS:-}" ]]; then
+    cols="${GRID_COLS:-3}"
+    rows="${GRID_ROWS:-${cols}}"
+  elif [[ "$raw" =~ ^([0-9]+)[xX]([0-9]+)$ ]]; then
+    cols="${BASH_REMATCH[1]}"
+    rows="${BASH_REMATCH[2]}"
+  elif [[ "$raw" =~ ^([0-9]+)$ ]]; then
+    cols="${BASH_REMATCH[1]}"
+    rows="$cols"
+  else
+    cols=3
+    rows=3
+  fi
+  (( cols % 2 == 0 )) && cols=$((cols + 1))
+  (( rows % 2 == 0 )) && rows=$((rows + 1))
+  (( cols < 1 )) && cols=1
+  (( rows < 1 )) && rows=1
+  (( cols > 15 )) && cols=15
+  (( rows > 15 )) && rows=15
+  GRID_COLS=$cols
+  GRID_ROWS=$rows
+}
+parse_grid
+
+# Widen window for larger grids; height follows cell content
+win_em=$(( 28 + GRID_COLS * 6 ))
+(( win_em > 90 )) && win_em=90
+
+export SNIPPET_FILE GRID_COLS GRID_ROWS GRID="${GRID_COLS}x${GRID_ROWS}"
+
+rofi \
   -modi "snippets:$MODE_SCRIPT" \
   -show snippets \
+  -eh 2 \
   -theme "$SCRIPT_DIR/snippet-picker.rasi" \
+  -theme-str "window { width: ${win_em}em; } listview { columns: ${GRID_COLS}; lines: ${GRID_ROWS}; fixed-height: false; } element { padding: 22px 14px; } element-text { padding: 8px 4px; }" \
   -cycle \
-  -kb-custom-1 Up \
-  -kb-custom-2 Down \
-  -kb-custom-3 Left \
-  -kb-custom-4 Right \
+  -kb-custom-1 "Up,KP_Up" \
+  -kb-custom-2 "Down,KP_Down" \
+  -kb-custom-3 "Left,KP_Left" \
+  -kb-custom-4 "Right,KP_Right" \
   -kb-row-up "" \
   -kb-row-down "" \
   -kb-row-left "" \
   -kb-row-right "" \
-  -kb-move-char-back Control+b \
-  -kb-move-char-forward Control+f
+  -kb-element-next "" \
+  -kb-element-prev "" \
+  -kb-move-char-back "Control+b" \
+  -kb-move-char-forward "Control+f" \
+  -kb-move-word-back "Control+Left" \
+  -kb-move-word-forward "Control+Right"
