@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # NxM snippet carousel: arrows wrap forever (Left/Right = category, Up/Down = variant)
-# Grid: GRID=5 | GRID=5x5 | GRID=7x3  (odd sizes; even values round up). Default 3x3.
+# Grid from ~/.config/snippet-picker/config (grid=3) or env GRID / GRID_COLS / GRID_ROWS.
+# Odd sizes; even values round up. Default 3x3.
 # Requires: rofi, plus xclip/wl-clipboard for copying
 set -euo pipefail
 
@@ -8,9 +9,34 @@ export LC_ALL=en_US.UTF-8
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MODE_SCRIPT="$SCRIPT_DIR/rofi-snippet-mode.sh"
-SNIPPET_FILE="${SNIPPET_FILE:-$HOME/.config/snippet-picker/snippets.txt}"
+CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/snippet-picker"
+CONFIG_FILE="${CONFIG_FILE:-$CONFIG_DIR/config}"
+SNIPPET_FILE="${SNIPPET_FILE:-$CONFIG_DIR/snippets.txt}"
 
 mkdir -p "$(dirname "$SNIPPET_FILE")"
+mkdir -p "$(dirname "$CONFIG_FILE")"
+
+if [ ! -f "$CONFIG_FILE" ]; then
+  cat > "$CONFIG_FILE" <<'EOF'
+# snippet-picker — odd grid size (even values round up)
+# Examples: 3 | 5 | 5x5 | 7x3
+grid=3
+EOF
+fi
+
+# Load grid from config when not set via environment
+if [[ -z "${GRID:-}" && -z "${GRID_COLS:-}" && -z "${GRID_ROWS:-}" && -f "$CONFIG_FILE" ]]; then
+  while IFS= read -r line || [[ -n "$line" ]]; do
+    [[ "$line" =~ ^[[:space:]]*# ]] && continue
+    [[ "$line" =~ ^[[:space:]]*$ ]] && continue
+    if [[ "$line" =~ ^[[:space:]]*grid[[:space:]]*=[[:space:]]*(.+)$ ]]; then
+      GRID="${BASH_REMATCH[1]}"
+      GRID="${GRID%%#*}"
+      GRID="${GRID%"${GRID##*[![:space:]]}"}"
+      break
+    fi
+  done < "$CONFIG_FILE"
+fi
 
 if [ ! -f "$SNIPPET_FILE" ]; then
   # Format: Category::Label::Text   (no spaces in Category or Label, please)
@@ -671,7 +697,7 @@ if ! awk -F'::' '!/^#/ && NF>=3 {found=1; exit} END{exit !found}' "$SNIPPET_FILE
   exit 1
 fi
 
-# Parse GRID / GRID_COLS / GRID_ROWS (odd integers 1..15)
+# Parse GRID / GRID_COLS / GRID_ROWS / config grid= (odd integers 1..15)
 parse_grid() {
   local raw="${GRID:-}" cols rows
   if [[ -n "${GRID_COLS:-}" || -n "${GRID_ROWS:-}" ]]; then

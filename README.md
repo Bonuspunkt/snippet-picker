@@ -26,7 +26,7 @@ Larger grids (5×5, 7×7, …) show more neighbor categories/variants. Uneven si
 
 ### Install
 
-Arch (package), from a clone that has tag `v0.2.0`:
+Arch (package), from a clone that has tag `v0.3.0`:
 
 ```bash
 makepkg -si
@@ -66,8 +66,8 @@ sudo dnf install kdialog
 ## Usage
 
 ```bash
-./snippet-picker              # 3×3 (default)
-GRID=5 ./snippet-picker       # 5×5
+./snippet-picker              # grid from config (default 3×3)
+GRID=5 ./snippet-picker       # one-shot override: 5×5
 GRID=7x3 ./snippet-picker     # 7 cols × 3 rows
 GRID_COLS=9 GRID_ROWS=5 ./snippet-picker
 ./snippet-picker --edit       # edit snippet file
@@ -79,6 +79,17 @@ GRID_COLS=9 GRID_ROWS=5 ./snippet-picker
 | ↑ / ↓ | Previous / next variant (wraps) |
 | Enter | Copy current snippet and quit |
 | Esc / click outside | Quit |
+
+## Config
+
+Default path: `~/.config/snippet-picker/config` (created on first run).
+
+```
+# Odd grid size (even values round up): 3 | 5 | 5x5 | 7x3
+grid=5
+```
+
+`GRID` / `GRID_COLS` / `GRID_ROWS` env vars override the config for a single run. Override the config path with `CONFIG_FILE=/path/to/config`.
 
 ## Snippet file
 

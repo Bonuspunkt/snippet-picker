@@ -4,7 +4,7 @@
 # Middle-row sides = category names; all other cells = neighbor snippets.
 # Arrows move items: Left/Right categories, Up/Down variants. Enter copies & quits.
 #
-# Grid size from GRID (e.g. 5, 5x5, 7x3) or GRID_COLS / GRID_ROWS (odd integers).
+# Grid size from env (exported by launcher) or GRID / GRID_COLS / GRID_ROWS.
 set -euo pipefail
 
 SNIPPET_FILE="${SNIPPET_FILE:-$HOME/.config/snippet-picker/snippets.txt}"
