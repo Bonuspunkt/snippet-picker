@@ -674,6 +674,522 @@ Cute::BigGrin::( ˶ˆᗜˆ˵ )
 Cute::Plead::(＞人＜;)
 Cute::PuppyEyes::(๑•́ ₃ •̀๑)
 Cute::SoftPlead::( ๑ ᵕ ﹏ ᵕ ๑ )
+Party::Classic::(ﾉ^ヮ^)ﾉ*:・ﾟ✧
+Party::Hooray::＼(＾▽＾)／
+Party::Banzai::＼(^o^)／
+Party::Confetti::(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+Party::Sparkle::☆*:.｡.o(≧▽≦)o.｡.:*☆
+Party::Cheers::ヾ(＾∇＾)ノ
+Party::Yay::٩(◕‿◕)۶
+Party::Celebrate::ヽ(^o^)丿
+Party::Hyped::o(≧∇≦o)
+Party::HandsUp::ヽ(o^ ^o)ﾉ
+Party::Excitement::(((o(*ﾟ▽ﾟ*)o)))
+Party::Cheer::(o´∀`o)
+Party::JumpJoy::٩(｡•́‿•̀｡)۶
+Party::Vibe::♪♪♪ ヽ( ˇヮˇ )ノ
+Party::Sing::♪(๑ᴖ◡ᴖ๑)♪
+Party::Music::(*ﾉ・ω・)ﾉ♫
+Party::Disco::└( ^o^ )┘
+Party::Groove::ƪ(˘⌣˘)ʃ
+Party::RaiseRoof::(ノ^o^)ノ
+Party::Float::〜(￣▽￣〜)
+Party::Glide::(〜￣▽￣)〜
+Party::Wiggle::₍₍ ◝( ﾟ∀ ﾟ )◟ ⁾⁾
+Party::Toast::( ^_^)／▼☆▼＼(^_^ )
+Party::Victory::ヽ(゜∀゜)ﾉ
+Party::Win::★彡( •̀ ω •́ )彡★
+Party::Birthday::✧*。٩(ˊᗜˋ*)و✧*。
+Party::Congrats::✦*:ﾟ.(๑˃ᴗ˂๑).ﾟ:*✦
+Party::Fiesta::ヽ(★ω★)ノ♪
+Party::DanceParty::♪ヽ(*⌒∇⌒*)ﾉ♪
+Party::Pump::٩(ˊᗜˋ*)و
+Party::SparkArms::＼(≧▽≦)／
+Party::Wow::ヽ(>∀<☆)ノ
+Party::PartyWave::(ﾉ´∀｀)ﾉ
+Party::Boom::ヽ(`▽´)ﾉ
+Party::HappyJump::⸜(*ˊᗜˋ*)⸝
+Party::StarCast::（ノ＞▽＜）ノ☆
+Party::CheersAlt::(＾▽＾)っ
+Party::HypeRun::o(>ω<)o
+Party::Chill::( ‾́ ◡ ‾́ )
+Party::DoubleYay::ヽ(^o^)丿ヽ(^o^)丿
+Party::SparkJoy::☆ﾟ.*･｡(ﾉ´∀`)ﾉ
+Party::MusicWave::♪ヾ(*・ω・)ﾉ♪
+Party::BigCheer::ヾ(^∇^)♪
+Party::ConfettiAlt::(ﾉ≧▽≦)ﾉ*:･ﾟ
+Party::ArmsOut::ヘ(^o^ヘ)
+Party::Spin::ヘ(^o^ヘ)(ノ^o^)ノ
+Dance::Classic::└(＾＾)┐
+Dance::Back::┌(＾＾)┘
+Dance::Disco::└( ^o^ )┘
+Dance::Groove::ƪ(˘⌣˘)ʃ
+Dance::Wiggle::₍₍ ◝( ﾟ∀ ﾟ )◟ ⁾⁾
+Dance::Float::〜(￣▽￣〜)
+Dance::Glide::(〜￣▽￣)〜
+Dance::Raise::(ノ^o^)ノ
+Dance::Group::ヽ(ﾟｰﾟ*ヽ)ヽ(*ﾟｰﾟ*)ﾉ(ﾉ*ﾟｰﾟ)ﾉ
+Dance::Duo::♪ヽ( ⌒o⌒)人(⌒-⌒ )v ♪
+Dance::Sing::♪(๑ᴖ◡ᴖ๑)♪
+Dance::Vibe::♪♪♪ ヽ( ˇヮˇ )ノ
+Dance::Music::(*ﾉ・ω・)ﾉ♫
+Dance::Happy::♪ヽ(*⌒∇⌒*)ﾉ♪
+Dance::StarStep::┌(★ｏ☆)┘♪
+Dance::StarBack::└(☆ｏ★)┘♪
+Dance::Bump::┗┏┗┏('o')┓┛┓┛
+Dance::Shimmy::ヘ(^o^ヘ)
+Dance::SpinPair::ヘ(^o^ヘ)(ノ^o^)ノ
+Dance::Funky::┗(＾0＾)┓
+Dance::FunkyBack::┏(＾0＾)┛
+Dance::Sway::～(´▽｀～)(～´▽｀)～
+Dance::Boogie::┌(メ▼▼)┘
+Dance::BoogieAlt::└(▼▼メ)┐
+Dance::Hop::٩(•౪•٩)
+Dance::HopAlt::(۶•౪•)۶
+Dance::Twist::♪(´ε` )
+Dance::Beat::♩(˶˃ ᵕ ˂˶)♩
+Dance::Jive::ヽ( ⌒o⌒)ﾉ
+Dance::Swing::＼(^ω^＼)
+Dance::SwingAlt::(／^ω^)／
+Dance::Club::ヽ(゜∀゜)ﾉ♪
+Dance::GrooveAlt::ƪ(‾ε‾“)ʃ
+Dance::WaveDance::ヾ(＾∇＾)ﾉ
+Dance::Kick::ᕕ(⌐■_■)ᕗ ♪♬
+Dance::Cool::♪┏(・o･)┛♪
+Dance::CoolBack::♪┗(・o･)┓♪
+Dance::Tiny::₍₍٩( ᐛ )۶₎₎
+Dance::JoyStep::ヾ(*´∀｀*)ﾉ
+Dance::SparkStep::♪(ﾉ^o^)ﾉ♪
+Dance::Shuffle::ᕕ( ᐛ )ᕗ
+Dance::ShuffleAlt::ᕕ(╯°□°)ᕗ
+Dance::Hip::┌(^o^)┘♪
+Dance::HipBack::└(^o^)┐♪
+Dance::ChaCha::ヘ(￣ω￣ヘ)
+Sleepy::Classic::(-_-) zzz
+Sleepy::Soft::(´-ω-｀)zzz
+Sleepy::Dream::(∪｡∪)｡｡｡zzz
+Sleepy::Snore::( ˘ω˘ )ｽﾔｧ
+Sleepy::Tired::(－_－) zzZ
+Sleepy::Drool::(´Д｀≡´Д｀)
+Sleepy::Yawn::(￣ρ￣)..zzZZ
+Sleepy::Nap::(´～｀)σ
+Sleepy::Bed::[▓▓] ヽ(´ー｀)ノ
+Sleepy::Pillow::( ˘͈ ᵕ ˘͈ ) zzz
+Sleepy::CuteSleep::(ᵕ＿ᵕ) ｡oO
+Sleepy::BearSleep::ʕ – ᴥ – ʔ
+Sleepy::CatSleep::(=ω=)zzz
+Sleepy::Closed::(｡˘ω˘｡) zzz
+Sleepy::Rest::(´-ι_-｀)
+Sleepy::Doze::(｡-_-｡)ﾉ
+Sleepy::Heavy::(－ω－) zzZ
+Sleepy::SoftYawn::( ˘ω˘ )‥zzz
+Sleepy::Blanket::⊂(´･ω･｀⊂ ) zzz
+Sleepy::Nod::(。-ω-)zzz
+Sleepy::Droopy::(－ω－｡)
+Sleepy::Quiet::(∪｡∪)..zzZ
+Sleepy::Deep::(￣ο￣) ..zzZ
+Sleepy::Peaceful::( ˶˘ ³˘)♥ zzz
+Sleepy::Tiny::(-ω-｀ )
+Sleepy::LongNap::( ´_ゝ｀)ﾉ
+Sleepy::Almost::(。´ｰ｀)ｚｚｚ
+Sleepy::WaveTired::(－_－)ﾉ
+Sleepy::Exhausted::(×_×;）
+Sleepy::Knocked::(x_x)
+Sleepy::Faint::(*_*)zzz?
+Sleepy::SoftZ::( ˘▾˘)~
+Sleepy::Cloud::☁ (－ω－) ☁
+Sleepy::Moon::☾ (´ω｀) ☽
+Sleepy::Zzz::( ˘ω˘ )zZ
+Sleepy::YawnAlt::（´□｀川）
+Sleepy::Stretch::ヽ( ´ｰ｀)ﾉ
+Sleepy::Mumble::(。-ω-)ﾑﾆｬ
+Sleepy::HalfOpen::( ´△｀)
+Sleepy::Drowsy::(｡ŏ_ŏ)
+Sleepy::Bedtime::(-.-)Zzz…
+Sleepy::Snooze::(∪.∪ )…zzz
+Confused::Classic::(・・?)
+Confused::Tilt::(・_・ヾ
+Confused::Huh::(゜-゜)
+Confused::What::(⊙_☉)
+Confused::Wide::(⊙.☉)
+Confused::Scratch::(￣ー￣？)
+Confused::Dot::(・。・;
+Confused::Question::(´･_･`)?
+Confused::Blank::(´・ω・`)?
+Confused::Lost::(・・;)?
+Confused::Spin::(@_@)
+Confused::Dizzy::(＠_＠;)
+Confused::Wavy::(￣～￣;)
+Confused::Side::(¬_¬)?
+Confused::Think::( ˘•ω•˘ ).oO(?)
+Confused::Wonder::(๑•̆૩•̆)
+Confused::TiltAlt::ヽ(゜Q。)ノ？
+Confused::Open::(◯Δ◯∥)
+Confused::ShockAsk::Σ(・ω・ノ)ノ？
+Confused::Soft::(｡ŏ﹏ŏ)
+Confused::Unsure::(´ー｀)?
+Confused::BigAsk::(゜д゜)?
+Confused::NervousAsk::(・∀・)?
+Confused::CatAsk::(=^・・^=)?
+Confused::BearAsk::ʕ •́؈•̀ ʔ?
+Confused::SpinAsk::(゜ロ゜;
+Confused::WaveAsk::(￣ω￣;)?
+Confused::Oh::(・・*)?
+Confused::Hmm::(￣ヘ￣)?
+Confused::Stare::(・ε・)?
+Confused::TiltHead::(・ω・｀)?
+Confused::Double::(??)
+Confused::SparkAsk::(゜o゜?
+Confused::FrownAsk::(＞﹏＜)?
+Confused::Round::(o_O)?
+Confused::Asym::(O_o)?
+Confused::Dots::(・・・)
+Confused::Pause::(－_－)?
+Confused::Peek::( ・・)σ?
+Confused::SoftThink::(´～｀)?
+Confused::Wobble::(~_~;)?
+Confused::BigEyes::(◉_◉)?
+Confused::TinyAsk::(˙ڡ˙)?
+Confused::ShrugAsk::¯\_(ツ)_/¯?
+Surprised::Classic::Σ(゜ロ゜;)
+Surprised::Shock::Σ(°Д°;
+Surprised::Wide::(⊙_⊙)
+Surprised::Gasp::(°o°)
+Surprised::Wow::w(°ｏ°)w
+Surprised::Jump::ヽ(゜▽゜)ノ!
+Surprised::Startled::Σ(･ω･ﾉ)ﾉ
+Surprised::Big::(((( ;°Д°))))
+Surprised::Open::(ﾟДﾟ;)
+Surprised::Eyes::(O_O)
+Surprised::Asym::(O_o)
+Surprised::Panic::ヽ(ﾟДﾟ)ﾉ
+Surprised::Sudden::Σ(ﾟДﾟ；)
+Surprised::Amazed::(*ﾟｰﾟ*)
+Surprised::SparkWow::(*≧▽≦)ﾉｼ))
+Surprised::Hands::＼(◎o◎)／
+Surprised::Yell::ヽ(#`Д´)ﾉ
+Surprised::SoftShock::(｡ŏ﹏ŏ)
+Surprised::CatShock::(=①ω①=)
+Surprised::BearShock::ʕ⊙ᴥ⊙ʔ
+Surprised::Blink::(゜.゜)
+Surprised::DoubleTake::(°ロ°) !
+Surprised::Freeze::(；ﾟДﾟ)
+Surprised::Whoa::Σ(￣□￣;)
+Surprised::Pop::(ﾉﾟοﾟ)ﾉ
+Surprised::JumpAlt::ヽ(°〇°)ﾉ
+Surprised::BigMouth::（゜◇゜）
+Surprised::Alert::Σ(・Д・)!
+Surprised::Scare::ヾ(ﾟДﾟ;ﾉ
+Surprised::Awe::(★ω★)
+Surprised::Spark::(*ﾟ∀ﾟ*)
+Surprised::RoundShock::(๑°ㅁ°๑)
+Surprised::DotShock::(・o・)
+Surprised::WideOpen::(◉Д◉)
+Surprised::Tremble::(((ﾟДﾟ)))
+Surprised::Back::∑(O_O；)
+Surprised::Lean::Σ(っ °Д °;)っ
+Surprised::SoftWow::( ˶°ㅁ°) !!
+Surprised::CuteShock::(๑°□°๑)
+Surprised::OhMy::(；゜○゜)
+Surprised::Bang::Σ(ノ°▽°)ノ
+Surprised::SpinShock::(@Д@)
+Wave::Classic::(＾▽＾)ノ
+Wave::Hello::( ´ ▽ ` )ﾉ
+Wave::Cute::(｡･ω･)ﾉﾞ
+Wave::Soft::( ´ ∀ ` )ノ
+Wave::Peace::(＾ω＾)ﾉ
+Wave::Happy::ヾ(＾∇＾)ﾉ
+Wave::Bye::(￣▽￣)ノ
+Wave::Salute::ヾ(・ω・)ゞ
+Wave::Spark::(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+Wave::Cheer::ヽ(´▽｀)ノ
+Wave::Tiny::(・ω・)ノ
+Wave::Blush::(*ノωノ)
+Wave::Cool::(⌐■_■)ノ
+Wave::Lenny::( ͡° ͜ʖ ͡°)ノ
+Wave::Bear::ʕ・ᴥ・ʔノ
+Wave::Cat::(=^･ω･^=)ﾉ
+Wave::Love::(｡･ω･｡)ﾉ♡
+Wave::Excited::ヾ(≧▽≦*)o
+Wave::SoftBye::(｡･ω･｡)ﾉﾞ
+Wave::Double::ヾ(￣▽￣)ノ
+Wave::PeaceOut::✌(´∀`)ﾉ
+Wave::Wink::(。•̀ᴗ-)✧ﾉ
+Wave::High::＼(＾▽＾)／
+Wave::Reach::(つ◕‿◕)つﾉ
+Wave::Flower::(✿◠‿◠)ノ
+Wave::Omega::(*´ω｀*)ノ
+Wave::Shy::(〃▽〃)ノ
+Wave::Big::ヽ(゜∀゜)ノ
+Wave::Gentle::( ˘ω˘ )ノ
+Wave::Sparkle::(ﾉ´ヮ`)ﾉ*: ･ﾟ
+Wave::HiThere::＼(≧∇≦)／
+Wave::SeeYa::(＾∇＾)ﾉ♪
+Wave::Morning::ヾ(＠⌒ー⌒＠)ノ
+Wave::Night::(´∀｀)ﾉｼ
+Wave::Call::(￣▽￣)σ
+Wave::Point::( ・∀・)つ－☆
+Wave::Invite::(っ´ω`c)ﾉ
+Wave::HappyBye::ヾ(*´∀｀*)ﾉ
+Wave::CuteAlt::|ω・)ﾉ
+Wave::SoftSpark::(ﾉ´∀｀*)ﾉ
+Wave::CheerAlt::ヽ(＞∀＜)/
+Wave::Round::(◍•ᴗ•◍)ﾉ
+Flex::Classic::ᕦ(ò_óˇ)ᕤ
+Flex::Strong::ᕙ(⇀‸↼‶)ᕗ
+Flex::Muscle::ᕦ(ツ)ᕤ
+Flex::Arms::ᕙ(° ͜ʖ °)ᕗ
+Flex::Lenny::ᕦ( ͡° ͜ʖ ͡°)ᕤ
+Flex::Happy::ᕕ( ᐛ )ᕗ
+Flex::RunFlex::ᕕ(⌐■_■)ᕗ♪
+Flex::Power::ᕙ(^▽^)ᕗ
+Flex::Fierce::ᕦ(ò_óˇ)ᕤ
+Flex::Pump::٩(ˊᗜˋ*)و
+Flex::Fist::(ง •̀_•́)ง
+Flex::DoubleFist::(ง'̀-'́)ง
+Flex::Bear::ʕ ᓀ ᴥ ᓂ ʔ
+Flex::Cat::ฅ^•ﻌ•^ฅ
+Flex::Cool::(⌐■_■)
+Flex::Deal::( ͡° ͜ʖ ͡°)ノ⌐■-■
+Flex::Victory::ｖ(￣ｰ￣)ｖ
+Flex::Peace::ｖ(◠｡◠)ｖ
+Flex::Swagger::ᕕ( ՞ ᗜ ՞ )ᕗ
+Flex::Buff::୧(﹒︠ᴗ﹒︡)୨
+Flex::Tiny::ᕙ( ˘ω˘ )ᕗ
+Flex::Spark::ᕙ(✧ڡ✧)ᕗ
+Flex::Smile::ᕦ(ᴗ‿ᴗ)ᕤ
+Flex::Mad::ᕙ(⇀‸↼)ᕗ
+Flex::Ready::ᕕ( ͡° ͜ʖ ͡°)ᕗ
+Flex::Hero::ᕦ(òᴗó)ᕤ
+Flex::Jump::ᕕ(゜∀゜)ᕗ
+Flex::Charge::ᕦ(ò益ó)ᕤ
+Flex::Proud::ᕙ( ˃ ᴗ ˂ )ᕗ
+Flex::Epic::ᕦ(★‿★)ᕤ
+Flex::Boss::ᕙ(◣д◢)ᕗ
+Flex::Lite::ᕕ(・∀・)ᕗ
+Flex::Soft::ᕦ(˶•̀ ᴗ •́˶)ᕤ
+Flex::Wiggle::ᕕ( ˘⊖˘ )ᕗ
+Flex::Fire::ᕙ(◉‿◉)ᕗ
+Flex::Stance::ᕦ( ⊙ ‿ ⊙ )ᕤ
+Flex::Go::ᕕ(≧Д≦)ᕗ
+Flex::Grin::ᕙ(˵◕ω◕˵)ᕗ
+Flex::PointFlex::(☞ﾟヮﾟ)☞
+Flex::FingerGuns::☞(⌒▽⌒)☞
+Flex::Thumbs::(＾▽＾)ｄ
+Flex::ThumbsAlt::ｄ(＾▽＾)
+Flex::Ok::(￣^￣)ゞ
+Kiss::Classic::( ˘ ³˘)♥
+Kiss::Blow::(*˘︶˘*).｡.:*♡
+Kiss::Pucker::( ˘ε˘ )
+Kiss::Soft::(っ˘з(˘⌣˘ )
+Kiss::Love::(づ￣ ³￣)づ
+Kiss::Heart::( ˘ ³˘)♡
+Kiss::Cheek::(๑ˇεˇ๑)*
+Kiss::Sweet::(≧ε≦〃)
+Kiss::Blush::(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)*
+Kiss::Lips::(‾ε‾〣)
+Kiss::Cute::(´ε｀*)
+Kiss::Mwah::(*￣з￣)
+Kiss::Gentle::( ˶˘ ³˘)♡
+Kiss::Double::(*´з`)(´ε`*)
+Kiss::Smooch::( ˘з˘)♡
+Kiss::Flying::(っ˘з˘ς).｡o♡
+Kiss::Spark::(*´з｀*)♡
+Kiss::Wink::( ˘з˘)~♡
+Kiss::Peek::(。≖ˇェˇ≖。)
+Kiss::Bear::ʕ ⌢ ᴥ ⌢ ʔ
+Kiss::Cat::(=^ェ^=)
+Kiss::Omega::(*´зωз｀*)
+Kiss::SoftLove::( ˘з˘)っ♡
+Kiss::BlushKiss::(〃￣ω￣〃)ゞ
+Kiss::HugKiss::(づ｡˘ ³˘｡)づ♡
+Kiss::Air::ε=ε=ε=♡( ˘ ³˘)ノ
+Kiss::BlowAlt::( ˘ ³˘)ノ
+Kiss::HeartBlow::( ˘ ³˘)♥.｡o○
+Kiss::Tiny::(˘ε˘ )
+Kiss::Round::(◍˘з˘◍)
+Kiss::Nose::(´ε｀ )
+Kiss::Whisper::(*´ڡ｀*)
+Kiss::Shy::(⁄ ⁄•⁄ω⁄•⁄ ⁄)*
+Kiss::MwahAlt::( ˘з˘)♡
+Kiss::Kissy::(๑ᵕ౪ᵕ๑)*
+Kiss::SoftPucker::(˘з˘)
+Kiss::LoveEyes::(♥ε♥)
+Kiss::CuteAlt::(๑˘з˘๑)
+Kiss::SparkHeart::( ˘ ³˘).｡o♡
+Kiss::WaveKiss::( ˘ ³˘)ノ♡
+Kiss::FeedKiss::(っ˘з(˘⌣˘ )♡
+Run::Classic::ε=ε=ε=┌(;*´Д`)ﾉ
+Run::Dash::ε＝(ﾉ´д｀)ﾉ
+Run::Panic::ε=ε=ε=┌(;￣▽￣)┘
+Run::Flee::ε=ε=ε=┏(゜ロ゜;)┛
+Run::Sprint::┗(^o^ )┓三
+Run::Charge::≡≡≡┌( ^o^)┘
+Run::Zoom::─=≡Σ((( つ•̀ω•́)つ
+Run::DashAlt::═≡═((((*ﾉ´∀｀)ﾉ
+Run::Escape::ε=ε=┏( >_<)┛
+Run::Hurry::ε＝ε＝ε＝ε＝┌(;￣◇￣)┘
+Run::Fast::─=≡Σ(((￣□￣メ)
+Run::Bolt::≡≡≡ヘ( ^o^)ノ
+Run::Scamper::ε=ε=ε=ε=ε=ε=┌(;￣▽￣)┘
+Run::CuteRun::ε=ε=ε=ε=ε=ε=┌(๑˃̶͈̀ ᗨ ˂̶͈́)┘
+Run::LennyRun::ε=ε=ε=ε=┌(; ͡° ͜ʖ ͡°)┘
+Run::BearRun::ε=ε=ε=ʕノ•ᴥ•ʔノ
+Run::CatRun::ε=ε=ε=┗(･ω･;)┛
+Run::HappyRun::ε=ε=ε=┏(＾０＾)┛
+Run::MadRun::ε=ε=ε=┌(；´･ω･)┘
+Run::WaveRun::ε=ε=ε=ヾ(´∀｀*)ﾉ
+Run::Trail::‥…━━━☆
+Run::Whoosh::─=≡Σ(((( つ•̀ω•́)つ
+Run::Jet::≡≡≡┌(*ﾟ∇ﾟ)┘
+Run::Rush::ε＝ε＝ε＝┌(￣ー￣)┘
+Run::Slip::ε=ε=ε=┌(。Д。)┘
+Run::Bounce::ε=ε=ε=ε=┏(゜ロ゜)┛
+Run::Skip::ᕕ( ᐛ )ᕗ
+Run::SkipAlt::ᕕ(╯°□°)ᕗ
+Run::March::┏(｀ー´)┛
+Run::MarchAlt::┗(｀ー´)┓
+Run::Chase::ε=ε=ε=ε=ε=┏(;￣▽￣)┛
+Run::GoGo::─=≡Σ((( つºل͜º)つ
+Run::Blast::≡≡≡ヘ(^0^ヘ)
+Run::Speedy::ε=ε=ε=ε=ε=┌(ﾟдﾟ)┘
+Run::FleeCute::ε=ε=ε=ε=ε=ε=┌((*´∀｀))┘
+Run::DashCute::─=≡Σ(((o´∀｀)o
+Run::ZoomAlt::═≡═((((ﾉ´∀｀)ﾉ
+Run::PanicAlt::ε=ε=ε=ε=ε=┌(゜д゜)┘
+Run::TrailAlt::…━━☆☆☆
+Run::BoltAlt::≡≡≡ヘ(゜∀゜ヘ)
+Thinking::Classic::( ˘•ω•˘ ).oO
+Thinking::Hmm::(￣～￣)
+Thinking::Ponder::(・ω・)?
+Thinking::Deep::(´ｰ｀)
+Thinking::Idea::(｀・ω・´)ゞ✧
+Thinking::Lightbulb::(゜∇゜)！
+Thinking::Soft::( ˘•ω•˘ )
+Thinking::Chin::(´・ω・)σ
+Thinking::Gaze::(￣ω￣;)
+Thinking::Wonder::(๑•̆૩•̆)
+Thinking::Plan::( ˘ω˘ ).oO(…)
+Thinking::Scheme::(¬‿¬)
+Thinking::LennyThink::( ͡° ͜ʖ ͡°) .oO
+Thinking::Dot::(・。・)
+Thinking::Blank::(´-_ゝ-`)
+Thinking::Focus::(눈_눈)
+Thinking::Calculate::(￣ー￣)σ
+Thinking::Muse::( ˘͈ ᵕ ˘͈ )
+Thinking::Cloud::( ˘ω˘ ).oO☁
+Thinking::Question::(・_・ヾ
+Thinking::Realize::(ﾟ∀ﾟ)！
+Thinking::Aha::(☆▽☆)
+Thinking::SoftHmm::( ˘•̥̥̥ω•̥̥̥˘ )
+Thinking::Tilt::(｀ε´)
+Thinking::Side::(¬_¬)
+Thinking::Study::( ˘▾˘)~…
+Thinking::Math::(￣ω￣)＋
+Thinking::Brain::(・∀・)ノ゛
+Thinking::Remember::(´∀｀*)ｳﾝｳﾝ
+Thinking::Nostalgia::( ˘ω˘ ).oO(昔)
+Thinking::Decide::( ´△｀)
+Thinking::Unsure::(￣ヘ￣)
+Thinking::Overthink::(´；ω；｀).oO
+Thinking::CalmThink::( ˘ω˘ )
+Thinking::SparkIdea::(｀・ω・´)✧
+Thinking::BigThink::(￣□￣)
+Thinking::TinyThink::( ˙-˙ )
+Thinking::CatThink::(=^・・^=).oO
+Thinking::BearThink::ʕ •́؈•̀ ʔ.oO
+Thinking::PeekThink::( ・・)σ.oO
+Thinking::SoftPlan::(´ｰ｀).oO
+Thinking::WinkPlan::(。-ω-) .oO
+Thinking::SmileThink::(＾▽＾).oO
+Thinking::Serious::(￣^￣)
+Magic::Classic::(ﾉ≧∀≦)ﾉ ‥…━━━★
+Magic::Cast::(ﾉ^ヮ^)ﾉ*:・ﾟ✧
+Magic::Spark::(☆▽☆)
+Magic::Wand::( ・∀・)つ－☆
+Magic::Stars::☆*:.｡.o(≧▽≦)o.｡.:*☆
+Magic::Glitter::*:ﾟ*｡⋆ฺ(*´◡`)
+Magic::Boom::(∩^o^)⊃―☆
+Magic::Zap::(ﾉ>ω<)ﾉ :｡･:*:･ﾟ’★,｡･:*:･ﾟ’☆
+Magic::Shine::✧*｡٩(ˊᗜˋ*)و✧*｡
+Magic::Fairy::(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+Magic::Spell::⊂(￣(ｴ)￣)⊃☆
+Magic::Burst::ヽ(゜▽゜)ノ☆
+Magic::Twinkle::｡･:*:･ﾟ★,｡･:*:･ﾟ☆
+Magic::Wish::★⌒ヽ( ˘ω˘ )
+Magic::Charm::(๑˃̵ᴗ˂̵)و ✧
+Magic::Power::( •̀ω•́ )σ ✧
+Magic::SparkleCast::(ﾉ´ヮ`)ﾉ*:･ﾟ✧♡
+Magic::StarThrow::(ノ゜ο゜)ノ彡☆
+Magic::Confetti::*:･ﾟ✧*:･ﾟ✧
+Magic::Glow::(ﾉ´ヮ`)ﾉ*: ･ﾟ
+Magic::Mystic::✧･ﾟ: *✧･ﾟ:*
+Magic::Rainbow::☆彡(｡･ω･｡)☆彡
+Magic::Potion::( ˘ω˘ )つ━☆
+Magic::Beam::≡≡≡ヘ(^ω^ヘ)☆
+Magic::Flash::☆(｀・ω・´)☆
+Magic::Aura::✧(≖◡≖✿)
+Magic::CuteCast::(๑>ᴗ<๑)つ━☆
+Magic::LennyMagic::( ͡° ͜ʖ ͡°)つ━☆
+Magic::BearMagic::ʕ •ᴥ•ʔつ━☆
+Magic::CatMagic::(=^･ω･^=)つ━☆
+Magic::BigBang::(ﾉ≧∀≦)ﾉ‥…━━━★☆
+Magic::SoftStar::( ˘ω˘ )★
+Magic::Twirl::☆⌒(＞。☆)
+Magic::Orbit::ﾟ･*:.｡.☆｡.:*･ﾟ
+Magic::Dust::.｡.:*☆
+Magic::Shoot::(｀・ω・´)つ─☆
+Magic::Pop::(ﾉ´∀｀)ﾉ─★
+Magic::WaveMagic::ヾ(´∀｀*)ﾉ☆
+Magic::JoyCast::ヽ(≧▽≦)ノ★
+Magic::TinyStar::(*)・☆
+Magic::HeartMagic::(づ￣ ³￣)づ♡☆
+Eating::Classic::(っ˘ڡ˘ς)
+Eating::Yum::(๑ᵔㅂᵔ๑)
+Eating::Nom::( ˘▽˘)っ♨
+Eating::Hungry::(￣▽￣)δ⌒☆
+Eating::Chew::(๑´ڡ`๑)
+Eating::Sip::( ´∀｀)っ♨
+Eating::Tea::(＾▽＾)っ♨
+Eating::Ramen::(╯✧▽✧)╯□
+Eating::Cake::( ˘▽˘)っ□
+Eating::Cookie::(っ˘ڡ˘ς)*
+Eating::Pizza::( ˘▽˘)っ△
+Eating::Drink::ヾ(＾∇＾)ﾉ 凵
+Eating::Toast::(＾▽＾)っ凵
+Eating::Full::(ｕ_ｕ*)
+Eating::Drool::(´д｀ι)
+Eating::Want::(￣▽￣)σ[ ]
+Eating::Bite::(*´д｀*)
+Eating::HappyEat::(≧∀≦)ゞ
+Eating::CuteNom::(๑ᵕੂੂૢᵕ๑)
+Eating::Spoon::( ˘ω˘ )つ―☆⌒
+Eating::Feed::(˘▽˘>ԅ( ˘⌣˘)
+Eating::Share::(っ˘з(˘⌣˘ )
+Eating::Hot::( ´△｀)♨
+Eating::Cold::( ˘▽˘)っ*
+Eating::Sweet::(๑´ڡ`๑)♡
+Eating::Spicy::(｀д´)!!
+Eating::Mmm::(๑˃̵ᴗ˂̵)و
+Eating::Snack::( ˘▾˘)~*
+Eating::Fruit::( ˘ω˘ )っ○
+Eating::Soup::( ˘▽˘)っ♨
+Eating::Coffee::( ˘ω˘ )っ凵
+Eating::Beer::(＾▽＾)っ凵
+Eating::Wine::ヽ(`▽´)ﾉ◇
+Eating::IceCream::( ˘▽˘)っ◇
+Eating::Bread::(っ˘ڡ˘ς)□
+Eating::Sushi::( ˘ω˘ )っ▣
+Eating::Rice::( ˘▾˘)~◎
+Eating::Candy::(๑ᵔㅂᵔ๑)*
+Eating::FullAlt::(ｕωｕ*)
+Eating::More::( ˘▽˘)っ…
+Eating::Lick::(￣￢￣)
+Eating::Cheeks::(｡･ω･｡)ﾉ♡
+Eating::Chomp::(๑ᵔڡᵔ๑)
+Eating::Nibble::( ˘з˘)っ*
+Eating::Gulp::( ´∀｀)っ
+Eating::Ah::(๑ᵔㅂᵔ๑)♪
 EOF
 fi
 

@@ -1,6 +1,6 @@
 # Maintainer: Bonuspunkt
 pkgname=snippet-picker
-pkgver=0.3.1
+pkgver=0.3.2
 pkgrel=1
 pkgdesc='Configurable odd-sized rofi carousel for copying text snippets'
 arch=('any')

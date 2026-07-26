@@ -26,7 +26,7 @@ Larger grids (5×5, 7×7, …) show more neighbor categories/variants. Uneven si
 
 ### Install
 
-Arch (package), from a clone that has tag `v0.3.1`:
+Arch (package), from a clone that has tag `v0.3.2`:
 
 ```bash
 makepkg -si
