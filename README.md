@@ -26,15 +26,13 @@ Larger grids (5×5, 7×7, …) show more neighbor categories/variants. Uneven si
 
 ### Install
 
-Arch (package):
+Arch (package), from a clone that has tag `v0.1.0`:
 
 ```bash
-git archive --format=tar.gz --prefix=snippet-picker-0.1.0/ \
-  -o snippet-picker-0.1.0.tar.gz v0.1.0
 makepkg -si
 ```
 
-`makepkg -si` pulls in `rofi` and `gawk`. Also install a clipboard helper and optionally the popup:
+`makepkg -si` pulls in `rofi`, `gawk`, and `git`. Also install a clipboard helper and optionally the popup:
 
 ```bash
 sudo pacman -S wl-clipboard xclip   # Wayland and/or X11
@@ -80,7 +78,7 @@ GRID_COLS=9 GRID_ROWS=5 ./snippet-picker
 | ← / → | Previous / next category (wraps) |
 | ↑ / ↓ | Previous / next variant (wraps) |
 | Enter | Copy current snippet and quit |
-| Esc | Quit |
+| Esc / click outside | Quit |
 
 ## Snippet file
 

@@ -1,6 +1,7 @@
 /**
  * Snippet picker — category header on top, cream grid (size set via -theme-str).
  * Cursor locked on center (current item); surrounding items move.
+ * Fullscreen dim overlay; click outside the grid (or Esc) dismisses.
  */
 * {
     cream:            #e8dcc8;
@@ -15,21 +16,28 @@
 }
 
 configuration {
-    show-icons: false;
+    show-icons:    false;
+    click-to-exit: true;
 }
 
+/* Fullscreen dim so clicks outside the grid still hit rofi (needed on Wayland). */
 window {
-    background-color: @void;
+    fullscreen:       true;
+    background-color: black / 70%;
     border:           0;
-    padding:          40px;
-    width:            40em;
+    padding:          0;
+    children:         [ mainbox ];
 }
 
 mainbox {
     children:         [ message, listview ];
     spacing:          28px;
-    padding:          8px;
-    background-color: @void;
+    padding:          48px;
+    background-color: transparent;
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+    expand:           false;
+    width:            40em;
 }
 
 /* Hide unused search bar */

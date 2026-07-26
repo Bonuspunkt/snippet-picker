@@ -709,8 +709,12 @@ rofi \
   -show snippets \
   -eh 2 \
   -theme "$SCRIPT_DIR/snippet-picker.rasi" \
-  -theme-str "window { width: ${win_em}em; } listview { columns: ${GRID_COLS}; lines: ${GRID_ROWS}; fixed-height: false; } element { padding: 22px 14px; } element-text { padding: 8px 4px; }" \
+  -theme-str "mainbox { width: ${win_em}em; } listview { columns: ${GRID_COLS}; lines: ${GRID_ROWS}; fixed-height: false; } element { padding: 22px 14px; } element-text { padding: 8px 4px; }" \
   -cycle \
+  -click-to-exit \
+  -me-select-entry "" \
+  -me-accept-entry "" \
+  -kb-cancel "Escape,Control+g,Control+bracketleft,MousePrimary" \
   -kb-custom-1 "Up,KP_Up" \
   -kb-custom-2 "Down,KP_Down" \
   -kb-custom-3 "Left,KP_Left" \
