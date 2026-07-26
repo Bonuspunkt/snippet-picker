@@ -26,7 +26,7 @@ Larger grids (5×5, 7×7, …) show more neighbor categories/variants. Uneven si
 
 ### Install
 
-Arch (package), from a clone that has tag `v0.3.0`:
+Arch (package), from a clone that has tag `v0.3.1`:
 
 ```bash
 makepkg -si
@@ -103,7 +103,7 @@ Format (one snippet per line):
 Category::Label::Text
 ```
 
-- No spaces in `Category` or `Label`
+- `Category` and `Label` may only use letters, digits, `_`, and `-` (no spaces or other punctuation); invalid rows are skipped
 - Use `\n` for newlines in `Text`
 - Lines starting with `#` are ignored
 
@@ -115,3 +115,5 @@ Signature::Formal::Best regards,\nYour Name
 ```
 
 A starter file is created automatically on first run.
+
+Treat the snippet file as trusted local data: do not paste unreviewed shared lists into it. Snippet text is copied to the system clipboard on Enter — avoid storing secrets there.

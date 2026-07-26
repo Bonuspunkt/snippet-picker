@@ -1,6 +1,6 @@
 pkgbase = snippet-picker
 	pkgdesc = Configurable odd-sized rofi carousel for copying text snippets
-	pkgver = 0.3.0
+	pkgver = 0.3.1
 	pkgrel = 1
 	url = https://github.com/Bonuspunkt/snippet-picker
 	arch = any
@@ -13,7 +13,7 @@ pkgbase = snippet-picker
 	optdepends = xclip: X11 clipboard support
 	optdepends = xsel: X11 clipboard support (alternative)
 	optdepends = kdialog: optional Copied popup
-	source = snippet-picker-src::git+file:///home/bonuspunkt/dev/_claude/snippet-picker#tag=v0.3.0
+	source = snippet-picker-src::git+file:///home/bonuspunkt/dev/_claude/snippet-picker#tag=v0.3.1
 	sha256sums = SKIP
 
 pkgname = snippet-picker
