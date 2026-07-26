@@ -8,7 +8,7 @@ export LC_ALL=en_US.UTF-8
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MODE_SCRIPT="$SCRIPT_DIR/rofi-snippet-mode.sh"
-SNIPPET_FILE="${SNIPPET_FILE:-$HOME/.config/kde-snippets/snippets.txt}"
+SNIPPET_FILE="${SNIPPET_FILE:-$HOME/.config/snippet-picker/snippets.txt}"
 
 mkdir -p "$(dirname "$SNIPPET_FILE")"
 
@@ -709,7 +709,7 @@ rofi \
   -show snippets \
   -eh 2 \
   -theme "$SCRIPT_DIR/snippet-picker.rasi" \
-  -theme-str "mainbox { width: ${win_em}em; } listview { columns: ${GRID_COLS}; lines: ${GRID_ROWS}; fixed-height: false; } element { padding: 22px 14px; } element-text { padding: 8px 4px; }" \
+  -theme-str "window { width: ${win_em}em; } listview { columns: ${GRID_COLS}; lines: ${GRID_ROWS}; fixed-height: false; } element { padding: 22px 14px; } element-text { padding: 8px 4px; }" \
   -cycle \
   -click-to-exit \
   -me-select-entry "" \

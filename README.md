@@ -26,7 +26,7 @@ Larger grids (5×5, 7×7, …) show more neighbor categories/variants. Uneven si
 
 ### Install
 
-Arch (package), from a clone that has tag `v0.1.0`:
+Arch (package), from a clone that has tag `v0.2.0`:
 
 ```bash
 makepkg -si
@@ -82,7 +82,7 @@ GRID_COLS=9 GRID_ROWS=5 ./snippet-picker
 
 ## Snippet file
 
-Default path: `~/.config/kde-snippets/snippets.txt`
+Default path: `~/.config/snippet-picker/snippets.txt`
 
 Override with `SNIPPET_FILE=/path/to/file`.
 

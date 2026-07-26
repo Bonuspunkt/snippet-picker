@@ -1,7 +1,10 @@
 /**
  * Snippet picker — category header on top, cream grid (size set via -theme-str).
  * Cursor locked on center (current item); surrounding items move.
- * Fullscreen dim overlay; click outside the grid (or Esc) dismisses.
+ * Esc / click-to-exit dismisses (see launcher mouse cancel binding).
+ *
+ * Note: fullscreen dim overlays break listview text on rofi 2.x Wayland, so the
+ * window stays sized to the grid instead of covering the screen.
  */
 * {
     cream:            #e8dcc8;
@@ -20,24 +23,18 @@ configuration {
     click-to-exit: true;
 }
 
-/* Fullscreen dim so clicks outside the grid still hit rofi (needed on Wayland). */
 window {
-    fullscreen:       true;
-    background-color: black / 70%;
+    background-color: @void;
     border:           0;
-    padding:          0;
-    children:         [ mainbox ];
+    padding:          40px;
+    width:            40em;
 }
 
 mainbox {
     children:         [ message, listview ];
     spacing:          28px;
-    padding:          48px;
-    background-color: transparent;
-    horizontal-align: 0.5;
-    vertical-align:   0.5;
-    expand:           false;
-    width:            40em;
+    padding:          8px;
+    background-color: @void;
 }
 
 /* Hide unused search bar */

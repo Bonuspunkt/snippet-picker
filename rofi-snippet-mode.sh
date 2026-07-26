@@ -7,7 +7,7 @@
 # Grid size from GRID (e.g. 5, 5x5, 7x3) or GRID_COLS / GRID_ROWS (odd integers).
 set -euo pipefail
 
-SNIPPET_FILE="${SNIPPET_FILE:-$HOME/.config/kde-snippets/snippets.txt}"
+SNIPPET_FILE="${SNIPPET_FILE:-$HOME/.config/snippet-picker/snippets.txt}"
 RETV="${ROFI_RETV:-0}"
 
 # --- grid size (odd cols x odd rows) ---
