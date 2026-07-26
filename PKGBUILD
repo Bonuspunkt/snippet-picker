@@ -4,20 +4,22 @@ pkgver=0.1.0
 pkgrel=1
 pkgdesc='Configurable odd-sized rofi carousel for copying text snippets'
 arch=('any')
+url='https://github.com/Bonuspunkt/snippet-picker'
 license=('Unlicense')
 depends=('bash' 'rofi' 'gawk')
+makedepends=('git')
 optdepends=(
   'wl-clipboard: Wayland clipboard support'
   'xclip: X11 clipboard support'
   'xsel: X11 clipboard support (alternative)'
   'kdialog: optional Copied popup'
 )
-# Create with: git archive --format=tar.gz --prefix=${pkgname}-${pkgver}/ -o ${pkgname}-${pkgver}.tar.gz v${pkgver}
-source=("$pkgname-$pkgver.tar.gz")
-sha256sums=('ee9dceb98beb8fd48e715b1897d9069ebc632b29d9cb6b92f07b801bdf062bba')
+# Local clone name must not collide with the `snippet-picker` script in $startdir.
+source=("snippet-picker-src::git+file://${startdir}#tag=v${pkgver}")
+sha256sums=('SKIP')
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$srcdir/snippet-picker-src"
   local libdir="$pkgdir/usr/lib/$pkgname"
 
   install -Dm755 snippet-picker "$libdir/snippet-picker"
